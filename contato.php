@@ -2,7 +2,7 @@
     include_once("templates/header.php");
 ?>
 
-    <h1>Corpo do index</h1>
+    <h1>página de contato</h1>
 
 <?php 
 
