@@ -142,6 +142,78 @@ body{
     margin-right: 5px;
   }
 
+.content-container{
+    grid-area: main;
+}
+
+.main-title{
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.post-description{
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+.post-content{
+    line-height: 1.8;
+    margin: 10px 0;
+}
+
+.img-container{
+    width: 60%;
+}
+
+/* ASIDE */
+
+.nav-container{
+    grid-area: sidebar;
+}
+
+#tags-title, #categorias-title{
+    font-size: 25px;
+    margin-bottom: 10px;
+    background-color: #0000ff;
+    color: rgb(255, 255, 0);
+    text-align: center;
+    padding: 10px;
+    font-weight: 300px;
+}
+
+#tag-list, #categorias-list{
+    list-style: none;
+}
+
+#tag-list li, #categorias-list li{
+    margin-bottom: 10px;
+}
+
+#tag-list a, #categorias-list a{
+    color: #00eeff;
+    transition: .5s;
+}
+
+#tag-list a:hover, #categorias-list a:hover{
+    color: #05ff2f;
+}
+
+/* POSTs */
+
+#post-container{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: "main sidebar";
+    grid-gap: 10px;
+    padding-top: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 250px;
+}
+
+.conte
+
 /* RODAPE */
 footer{
     width: 100%;
