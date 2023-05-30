@@ -1,18 +1,26 @@
-*{
-    margin: 0;
-    padding: 0;
-
+* {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+html {
+    min-height: 100vh;
+    position: relative;
+}
+
+main {
+    margin-bottom: 250px;
+}
+
 
 body{
     background-color: rgb(0, 100, 0);
 }
 
-img.navegacao{
-}
-
+/* CABEÇALHO - BARRA NAV*/
 #logo{
     position: absolute;
     top: 10px;
@@ -55,6 +63,86 @@ img.navegacao{
     font-size: 14px;
 }
 
+/* HOME */
+
+#title-container{
+    min-width: 500px;
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(255, 255, 0);
+    margin-bottom: 25px;
+}
+
+#title-container h1{
+    font-size: 50px;
+}
+
+#title-container p{
+    margin-top: 10px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 0);
+}
+
+#posts-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+#post-description{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post-box:first-child{
+    min-width: 100%;
+}
+
+.post-box {
+    flex: 1 1 0;
+    margin: 0 1%;
+    margin-bottom: 20px;
+}
+
+.post-box img{
+    width: 100%;
+}
+
+.post-box .post-title {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.post-box .post-title a {
+    color: rgb(255, 255, 0);
+    transition: .5s;
+  }
+  
+  .post-box .post-title a:hover {
+    color: rgb(255, 255, 0);
+  }
+  
+  .post-box .post-description {
+    color: rgb(255, 255, 0);
+  }
+  
+  .tags-container {
+    margin-top: 10px;
+  }
+  
+  .tags-container a {
+    font-size: 14px;
+    color: #00ff00;
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+/* RODAPE */
 footer{
     width: 100%;
     position: absolute;

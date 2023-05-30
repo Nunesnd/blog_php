@@ -4,7 +4,7 @@
     [
       'id' => 1,
       'title' => 'Dom Pedro I',
-      'description' => 'Nosso primeiro imperador',
+      'description' => 'Nosso primeiro imperador, estrategista militar, unificador da nação',
       'tags' => ['Imperador', 'Fundador', 'Estrategista militar'],
       'img' => 'Pedro_I.jpg'
     ],

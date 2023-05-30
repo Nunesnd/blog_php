@@ -2,18 +2,16 @@
     include_once("templates/header.php");
 ?>
 
-    <h1>Corpo do index</h1>
-
     <main>
-        <div id="title-conteiner">
+        <div id="title-container">
             <h1>Blog Brasil</h1>
             <p>Conhecendo o Brasil</p>
         </div>
-        <div id="posts-conteiner">
+        <div id="posts-container">
             <?php foreach ($posts as $post): ?>
                 <div class="post-box">
                     <img src="<?= $BASE_URL ?>/img/<?= $post['img'] ?>" alt="<?= $post['title'] ?>">
-                    <h2 class="post-title"><?= $post['title'] ?>
+                    <h2 class="post-title">
                         <a href="<?= $BASE_URL ?>post.php?id=<?= $post['id'] ?>"><?= $post['title'] ?></a>
                     </h2>
                     <p class="post-description"><?= $post['description'] ?></p>
@@ -29,6 +27,6 @@
 
 <?php 
 
-    // include_once("templates/footer.php");
+    include_once("templates/footer.php");
 
 ?>
